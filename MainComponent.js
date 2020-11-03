@@ -18,8 +18,8 @@ function HomeScreen({ navigation }) {
    
     <View style={styles.container}>
     <Text>HOME SCREEN</Text>
+      < Image source = {./turnofphraselogo.png}
       <Button
-       
        color= '#5177b8'
         title="Play Game"
         onPress={() => navigation.navigate('Game')}
