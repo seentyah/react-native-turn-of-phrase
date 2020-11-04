@@ -65,38 +65,38 @@ function SettingsStackScreen() {
   );
 }
 
-// const Tab = createBottomTabNavigator();
+ const Tab = createBottomTabNavigator();
 
-// export default function App() {
-//   return (
-//     <NavigationContainer>
-//       <Tab.Navigator
-//        screenOptions={({ route }) => ({
-//           tabBarIcon: ({ focused, color, size }) => {
-//             let iconName;
+ export default function Main() {
+   return (
+     <NavigationContainer>
+       <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+             let iconName;
 
-//             if (route.name === 'Home') {
-//               iconName = focused ? 'ios-home' : 'ios-home';
-//             } else if (route.name === 'Settings') {
-//               iconName = focused ? 'ios-settings' : 'ios-settings';
-//             } else if (route.name === 'Sound') {
-//               iconName = focused ? 'ios-notifications-outline' : 'ios-notifications-outline';
-//             }
+             if (route.name === 'Home') {
+               iconName = focused ? 'ios-home' : 'ios-home';
+             } else if (route.name === 'Settings') {
+               iconName = focused ? 'ios-settings' : 'ios-settings';
+             } else if (route.name === 'Sound') {
+               iconName = focused ? 'ios-notifications-outline' : 'ios-notifications-outline';
+             }
 
-//             return <Ionicons name={iconName} size={size} color={color} />;
-//           },
-//         })}
-//         tabBarOptions={{
-//           activeTintColor: 'purple',
-//           inactiveTintColor: 'black',
-//         }}>
-//         <Tab.Screen name="Home" component={HomeStackScreen} />
-//          <Tab.Screen name="Sound" component={HomeStackScreen} />
-//         <Tab.Screen name="Settings" component={SettingsStackScreen} />
-//       </Tab.Navigator>
-//     </NavigationContainer>
-//   );
-//} 
+            return <Ionicons name={iconName} size={size} color={color} />;
+           },
+         })}
+         tabBarOptions={{
+           activeTintColor: 'purple',
+           inactiveTintColor: 'black',
+         }}>
+         <Tab.Screen name="Home" component={HomeStackScreen} />
+          <Tab.Screen name="Sound" component={HomeStackScreen} />
+         <Tab.Screen name="Settings" component={SettingsStackScreen} />
+       </Tab.Navigator>
+     </NavigationContainer>
+   );
+} 
 const styles = StyleSheet.create({
    container: {
     flex: 1,
